@@ -144,6 +144,8 @@ def impute_outlier(data, method, threshold = 3):
                 data[col_content, col_name] = data[col_name].mode()[0]
             case 'mean':
                 print(f"Unknown method: {method}")
+    
+    return data
 
 
 
